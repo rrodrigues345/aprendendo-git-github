@@ -25,8 +25,50 @@ De forma geral, repositórios são utilizados para organizar um único projeto. 
     - `git init`
 - adicione os arquivos criados: `git add .`
 - veja o status do git: `git status`
-- faça seu primeiro commit: `git commit -m "Primeiro commit do projeto!"
+
+``` bash
+rrodrigues@debian:~/projetos/aprendendo-git-github (master)$ git status 
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   Projeto.md
+	new file:   Readme.md
+	new file:   img/criando-repositorio.png
+	new file:   img/link-do-repositorio.png
+
+```
+
+- faça seu primeiro commit: `git commit -m "Primeiro commit do projeto!"`
+
+``` bash
+rrodrigues@debian:~/projetos/aprendendo-git-github (master)$ git commit -m "Primeiro commit!"
+
+[master (root-commit) 2d40d94] Primeiro commit!
+ 4 files changed, 57 insertions(+)
+ create mode 100644 Projeto.md
+ create mode 100644 Readme.md
+ create mode 100644 img/criando-repositorio.png
+ create mode 100644 img/link-do-repositorio.png
+
+```
+
 - vamos trocar o nome da branch de **master** para **main**: `git branch -M "main"`
+
+``` bash
+rrodrigues@dell:~/projetos/aprendendo-git-github (main)$ git status 
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+Veja que o arquivo Readme.md está indicado como: "modified:   Readme.md" pois estou editando este arquivo durante o commit.
 
 #### Criando o projeto no GitHub
 
@@ -34,12 +76,36 @@ De forma geral, repositórios são utilizados para organizar um único projeto. 
 
 ![Criando um repositório no GitHub](./img/criando-repositorio.png)
 
-Na páginan que abrir, com as instruções, copie o link do seu repositório do github:
+Na página de instruções que abrir, copie o link do seu repositório do github:
 
 ![Link do repositório no GitHub](./img/link-do-repositorio.png)
 
 O meu link aqui, ficou assim:
 `https://github.com/rrodrigues345/aprendendo-git-github.git`
+
+#### Conectando Git & GitHub =)
+
+De posse do link do repositório no GitHub, vamos conectar o git com o repositório do github:
+
+git remote add origin https://github.com/rrodrigues345/aprendendo-git-github.git
+
+Feito isso, podemos enviar os arquivos para nosso repositório, usando o comando: `git push -u origin main`
+
+``` bash
+rrodrigues@debian:~/projetos/aprendendo-git-github (main)$ git push -u origin main 
+Username for 'https://github.com': rrodrigues345
+Password for 'https://rrodrigues345@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 80.73 KiB | 10.09 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rrodrigues345/aprendendo-git-github.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+rrodrigues@debian:~/projetos/aprendendo-git-github (main)$ 
+```
 
 
 
