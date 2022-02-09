@@ -158,8 +158,30 @@ rrodrigues@dell:~/projetos/aprendendo-git-github (novo-botao)$
 
 #### Juntando as ramificações (*merge*)
 
-1. `git checkout main`
-2. 
+1. `git checkout main`, para voltar para a ramificação inicial do projeto.
+2. `git merge novo-botao`
+
+```bash
+rrodrigues@dell:~/projetos/aprendendo-git-github (main)$ git merge novo-botao 
+Updating 5ca4235..a36b93e
+Fast-forward
+ Readme.md | 76 +++++++++++++++++++++++++++++++++++++++++++++++++++------------
+ botao.md  |  8 +++++++
+ 2 files changed, 70 insertions(+), 14 deletions(-)
+ create mode 100644 botao.md
+``` 
+3. `git push origin main` 
+
+#### Baixando repositórios do GitHub para sua máquina usando o git
+
+- `git clone https://github.com/rafaballerini/GitTutorial.git`
+
+E como faço para atualizar este repositório de terceiros?
+
+
+
+
+
 
 
 
