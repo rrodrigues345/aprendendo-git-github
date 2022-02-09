@@ -118,5 +118,5 @@ rrodrigues@debian:~/projetos/aprendendo-git-github (main)$
 
 ## Referências
 
-[1] - https://docs.github.com/en/get-started/quickstart/hello-world
-[2] - Ballerini, Rafaella. 2021. Como usar Git e GitHub na prática: do primeiro commit até o pull request. Disponível em: https://www.youtube.com/watch?v=UBAX-13g8OM.
+1. https://docs.github.com/en/get-started/quickstart/hello-world
+2. Ballerini, Rafaella. 2021. Como usar Git e GitHub na prática: do primeiro commit até o pull request. Disponível em: https://www.youtube.com/watch?v=UBAX-13g8OM.
