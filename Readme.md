@@ -132,9 +132,35 @@ rrodrigues@debian:~/projetos/aprendendo-git-github (novo-botao)$
 
 Como o terminal indica, estamos na *branch* novo-botão. Então, podemos criar/editar os arquivos que farão parte desta ramificação e usamos os mesmos comandos anteriores para sincronizar com a pasta do projeto, no GitHub:
 
-1. git add .
-2. git commit -m "novo botao criado"
-3. 
+1. `git add .`
+2. `git commit -m "novo botao criado"`
+3. `git push origin novo-botao`
+
+```bash
+rrodrigues@dell:~/projetos/aprendendo-git-github (novo-botao)$ git push origin novo-botao 
+Username for 'https://github.com': rrodrigues345
+Password for 'https://rrodrigues345@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.25 KiB | 1.25 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'novo-botao' on GitHub by visiting:
+remote:      https://github.com/rrodrigues345/aprendendo-git-github/pull/new/novo-botao
+remote: 
+To https://github.com/rrodrigues345/aprendendo-git-github.git
+ * [new branch]      novo-botao -> novo-botao
+rrodrigues@dell:~/projetos/aprendendo-git-github (novo-botao)$ 
+``` 
+
+#### Juntando as ramificações (*merge*)
+
+1. `git checkout main`
+2. 
+
 
 
 
