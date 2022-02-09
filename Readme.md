@@ -1,10 +1,11 @@
 Olá! 
 
-Neste projeto, a Rafa Ballerini ensina a utilizar o Git. Acompanhe pelo vídeo abaixo:
+Neste projeto, a Rafaella Ballerini ensina a utilizar o Git. Acompanhe as instruções pelo vídeo:
 
 [![COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2](https://img.youtube.com/vi/UBAX-13g8OM/0.jpg)](https://www.youtube.com/watch?v=UBAX-13g8OM)
 
-##
+Abaixo, um passo a passo das etapas, para consulta posterior =). 
+
 
 ## Introdução
 
@@ -18,13 +19,13 @@ De forma geral, repositórios são utilizados para organizar um único projeto. 
 
 #### Iniciando o Git no Terminal
 
-- crie uma pasta no seu computador com o nome do projeto: `aprendendo-git-github`.
-- comece a criar os arquivos dentro de sua pasta.
+- Crie uma pasta no seu computador com o nome do projeto: `aprendendo-git-github`.
+- Comece a criar os arquivos dentro de sua pasta.
     - vc pode abrir a pasta direto pelo Visual Studio Code ou outra IDE de sua preferência.
-- inicie o git: 
+- Inicie o git: 
     - `git init`
-- adicione os arquivos criados: `git add .`
-- veja o status do git: `git status`
+- Adicione os arquivos criados: `git add .`
+- Veja o status do git com o comando: `git status`
 
 ``` bash
 rrodrigues@debian:~/projetos/aprendendo-git-github (master)$ git status 
@@ -39,7 +40,6 @@ Changes to be committed:
 	new file:   Readme.md
 	new file:   img/criando-repositorio.png
 	new file:   img/link-do-repositorio.png
-
 ```
 
 - faça seu primeiro commit: `git commit -m "Primeiro commit do projeto!"`
@@ -56,10 +56,10 @@ rrodrigues@debian:~/projetos/aprendendo-git-github (master)$ git commit -m "Prim
 
 ```
 
-- vamos trocar o nome da branch de **master** para **main**: `git branch -M "main"`
+- Vamos trocar o nome da branch de **master** para **main**: `git branch -M "main"`
 
 ``` bash
-rrodrigues@dell:~/projetos/aprendendo-git-github (main)$ git status 
+rrodrigues@debian:~/projetos/aprendendo-git-github (main)$ git status 
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -68,11 +68,11 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
-Veja que o arquivo Readme.md está indicado como: "modified:   Readme.md" pois estou editando este arquivo durante o commit.
+Veja que o arquivo Readme.md está indicado como: **"modified:   Readme.md"**, pois estou editando este arquivo durante o commit.
 
 #### Criando o projeto no GitHub
 
-- No github, na sua conta de usuário, crie um projeto. Vá em **Novo** --> **Repositório** e crie a pasta **aprendendo-git-github**. Marque a opção "Público" e clique em "Criar repositório".
+- No github, na sua conta de usuário, crie um projeto. Vá em **Novo** --> **Repositório** e crie a pasta **aprendendo-git-github**. Marque a opção **"Público"** e clique em **"Criar repositório"**.
 
 ![Criando um repositório no GitHub](./img/criando-repositorio.png)
 
@@ -80,14 +80,14 @@ Na página de instruções que abrir, copie o link do seu repositório do github
 
 ![Link do repositório no GitHub](./img/link-do-repositorio.png)
 
-O meu link aqui, ficou assim:
+O meu link aqui, por exemplo, ficará desta forma:
 `https://github.com/rrodrigues345/aprendendo-git-github.git`
 
 #### Conectando Git & GitHub =)
 
 De posse do link do repositório no GitHub, vamos conectar o git com o repositório do github:
 
-git remote add origin https://github.com/rrodrigues345/aprendendo-git-github.git
+`git remote add origin https://github.com/rrodrigues345/aprendendo-git-github.git`
 
 Feito isso, podemos enviar os arquivos para nosso repositório, usando o comando: `git push -u origin main`
 
@@ -107,12 +107,34 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 rrodrigues@debian:~/projetos/aprendendo-git-github (main)$ 
 ```
 
+#### Criando ramificações no projeto (*Branch*)
 
+- As ramificações (*branchs*) são utilizadas quando queremos adicionar alguma nova funcionalidade (*feature*) no projeto, isto é, adicionar uma nova página, por exemplo. 
+- Primeiro então, criamos a *branch* só depois fazemos as alterações. Utilizamos o comando `checkout`para sairmos da *branch* em que estamos e `-b "nome-da-nova-branch"`para irmos para a nova ramificação:
+  - `git checkout -b "novo-botao"`.
+    - faz alterações desejadas nos arquivos existentes ou cria um novo arquivo.
 
+``` bash
+rrodrigues@debian:~/projetos/aprendendo-git-github (main)$ git checkout -b "novo-botao"
+Switched to a new branch 'novo-botao'
 
+rrodrigues@debian:~/projetos/aprendendo-git-github (novo-botao)$ git status
+On branch novo-botao
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Readme.md
 
+no changes added to commit (use "git add" and/or "git commit -a")
 
+rrodrigues@debian:~/projetos/aprendendo-git-github (novo-botao)$ 
+```  
 
+Como o terminal indica, estamos na *branch* novo-botão. Então, podemos criar/editar os arquivos que farão parte desta ramificação e usamos os mesmos comandos anteriores para sincronizar com a pasta do projeto, no GitHub:
+
+1. git add .
+2. git commit -m "novo botao criado"
+3. 
 
 
 
