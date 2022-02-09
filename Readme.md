@@ -132,9 +132,11 @@ rrodrigues@debian:~/projetos/aprendendo-git-github (novo-botao)$
 
 Como o terminal indica, estamos na *branch* novo-botão. Então, podemos criar/editar os arquivos que farão parte desta ramificação e usamos os mesmos comandos anteriores para sincronizar com a pasta do projeto, no GitHub:
 
-1. `git add .`
-2. `git commit -m "novo botao criado"`
-3. `git push origin novo-botao`
+```bash
+1. git add .
+2. git commit -m "novo botao criado"
+3. git push origin novo-botao
+```
 
 ```bash
 rrodrigues@dell:~/projetos/aprendendo-git-github (novo-botao)$ git push origin novo-botao 
@@ -174,16 +176,12 @@ Fast-forward
 
 #### Baixando repositórios do GitHub para sua máquina usando o git
 
-- `git clone https://github.com/rafaballerini/GitTutorial.git`
+Para baixar um repositório use o comando `git clone` seguido do link do repositório desejado:
+`git clone https://github.com/rafaballerini/GitTutorial.git`
 
-E como faço para atualizar este repositório de terceiros?
+#### Mantendo os repositórios atualizados
 
-
-
-
-
-
-
+Podemos usar o git push origin main para enviar as alterações para o site do GitHub. Quando quisermos baixar as atualizações de algum repositório que baixamos em nosso computador, basta entrar na pasta e rodar o comando `git pull`, para que ele traga as últimas alterações daquele repositório. Este último comando é especialmente útil quando vc está acompanhando um repositório de terceiros e quer deixá-lo atualizado. 
 
 
 ## Referências
