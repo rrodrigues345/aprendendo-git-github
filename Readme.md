@@ -1,10 +1,10 @@
 Olá! 
 
-Neste projeto, a Rafaella Ballerini ensina a utilizar o Git. Acompanhe as instruções pelo vídeo:
+Neste projeto da Rafaella Ballerini, aprendi a utilizar os primeiros passos com Git e Github. 
 
 [![COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2](https://img.youtube.com/vi/UBAX-13g8OM/0.jpg)](https://www.youtube.com/watch?v=UBAX-13g8OM)
 
-Abaixo, um passo a passo das etapas, para consulta posterior =). 
+Fiz um passo a passo das etapas para ir treinando e para consultas posteriores =). 
 
 
 ## Introdução
