@@ -185,7 +185,7 @@ Podemos usar o git push origin main para enviar as alterações para o site do G
 
 #### Pull request
 
-
+É quando você faz a cópia de um repositório de terceiros (*fork*) e contribui com alguma alteração/correção no código. Você pode enviar esta solicitação de alteração para o desenvolvedor e este avaliará se a modificação é pertinente ou não para o projeto desenvolvido.
 
 ## Referências
 
