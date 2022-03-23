@@ -1,4 +1,4 @@
-Olá! 
+Olá!! 
 
 Neste projeto, a Rafaella Ballerini ensina a utilizar o Git. Acompanhe as instruções pelo vídeo:
 
